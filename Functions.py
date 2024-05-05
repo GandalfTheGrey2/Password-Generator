@@ -12,13 +12,15 @@ def introduction():
 
 def generate(length):
     a = ""
+    b = ['!','@','#','$','%']
     for i in range(length):
         r = random.randint(1, 6)
         if r == 1:
             a += str(random.randint(1, 9))
+        elif r == 2:
+            a += random.choice(b)
         else:
             a += random.choice(string.ascii_letters) 
     print(a)
-    
 
-generate(15)
+generate(10)
