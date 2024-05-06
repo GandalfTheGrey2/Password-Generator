@@ -21,6 +21,16 @@ def generate(length):
             a += random.choice(b)
         else:
             a += random.choice(string.ascii_letters) 
-    print(a)
+    return a
 
-generate(10)
+def askUser():
+    while True:
+        passlen = input("How long would you like your password?")
+        try:
+            passlen_int = int(passlen)
+            print("Your password:", generate(passlen_int))
+        except ValueError:
+            print("Enter only integers, no characters or symbols. Run again.")
+        break
+
+askUser()
