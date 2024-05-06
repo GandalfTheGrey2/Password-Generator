@@ -1,14 +1,17 @@
+# In todays world of cyber threats, we all need quality passwords to ensure our data is secure. I recently have been studying CompTIA Security+ and I realized I
+# needed to brush up on my python skills. So I am mixing cybersecurity with python with pratical application :)
+
 import time
 import random
 import string
 
 def introduction():
     print("Welcome to Password Generator!")
-    time.wait(0.5)
+    time.sleep(0.5)
     print("In today's world, you need complex passwords that secure your accounts and systems.")
-    time.wait(1)
+    time.sleep(1)
     print("According to NIST, you need a password atleast 8 characters in length and it needs complexity. However, the more characters, the better!")
-    time.wait(1)
+    time.sleep(1)
 
 def generate(length):
     a = ""
@@ -33,4 +36,5 @@ def askUser():
             print("Enter only integers, no characters or symbols. Run again.")
         break
 
+introduction()
 askUser()
